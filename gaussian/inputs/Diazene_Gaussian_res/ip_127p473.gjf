@@ -1,0 +1,13 @@
+%chk=ip_127p473.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene ip_127p473 | in_plane 127.473 deg
+
+0 1
+H   0.00000000  0.61339000 -1.24223000
+N   0.00000000  0.61339000 -0.17528000
+N   0.00000000 -0.55235000  0.28364000
+H   0.00001000 -1.46143000 -0.26340000
+

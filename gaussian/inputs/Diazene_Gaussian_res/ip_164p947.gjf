@@ -1,0 +1,13 @@
+%chk=ip_164p947.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene ip_164p947 | in_plane 164.947 deg
+
+0 1
+H   0.00000000  0.61854000 -1.26711000
+N   0.00000000  0.61854000 -0.18132000
+N   0.00000000 -0.55047000  0.24812000
+H   0.00000000 -1.56434000  0.33892000
+

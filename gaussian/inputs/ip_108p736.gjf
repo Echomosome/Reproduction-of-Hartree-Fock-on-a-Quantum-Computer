@@ -1,0 +1,13 @@
+%chk=ip_108p736.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene ip_108p736 | in_plane 108.736 deg
+
+0 1
+H   0.00000000  0.61228000 -1.23237000
+N   0.00000000  0.61228000 -0.16925000
+N   0.00000000 -0.56613000  0.29515000
+H   0.00001000 -1.25344000 -0.51686000
+

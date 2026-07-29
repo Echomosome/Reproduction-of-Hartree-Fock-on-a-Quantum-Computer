@@ -1,0 +1,13 @@
+%chk=ip_237p578.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene ip_237p578 | in_plane 237.578 deg
+
+0 1
+H  -0.00005000  0.62175000 -1.20948000
+N  -0.00005000  0.62175000 -0.14932000
+N  -0.00005000 -0.59932000  0.15347000
+H   0.00155000 -0.93328000  1.15189000
+

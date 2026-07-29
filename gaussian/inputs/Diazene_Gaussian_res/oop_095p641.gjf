@@ -1,0 +1,13 @@
+%chk=oop_095p641.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene oop_095p641 | out_of_plane 95.641 deg
+
+0 1
+H  -0.03338000  0.62184000 -1.24521000
+N  -0.03338000  0.62184000 -0.18592000
+N  -0.03338000 -0.60178000  0.24302000
+H   0.96106000 -0.90055000  0.45184000
+

@@ -1,0 +1,13 @@
+%chk=oop_072p631.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene oop_072p631 | out_of_plane 72.631 deg
+
+0 1
+H  -0.03098000  0.60150000 -1.29530000
+N  -0.03098000  0.60150000 -0.23059000
+N  -0.03098000 -0.56623000  0.30717000
+H   0.89199000 -1.09153000  0.23125000
+

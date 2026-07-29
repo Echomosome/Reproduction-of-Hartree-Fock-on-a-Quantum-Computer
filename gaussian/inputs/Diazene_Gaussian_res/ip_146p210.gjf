@@ -1,0 +1,13 @@
+%chk=ip_146p210.chk
+%mem=4GB
+%nprocshared=8
+#p RHF/STO-3G SCF=(Tight,XQC,MaxCycle=512) NoSymm Pop=Full
+
+Diazene ip_146p210 | in_plane 146.210 deg
+
+0 1
+H   0.00000000  0.61423000 -1.26614000
+N   0.00000000  0.61423000 -0.18644000
+N   0.00000000 -0.54592000  0.27365000
+H   0.00001000 -1.56334000  0.05447000
+
