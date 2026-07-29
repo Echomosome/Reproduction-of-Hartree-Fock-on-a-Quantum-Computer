@@ -1,0 +1,4 @@
+-r requirements.txt
+pyscf==2.10.0
+scipy>=1.13,<2
+h5py>=3.10,<4
