@@ -1,0 +1,1472 @@
+{
+  "schema_version": 1,
+  "system": {
+    "name": "linear_H8_R1p3000_RHF_STO3G",
+    "n_modes": 8,
+    "n_electrons_total": 8,
+    "n_particles_one_spin": 4,
+    "encoded_spin_sector": "alpha; beta is identical under RHF",
+    "initial_occupied_modes": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "gate_conventions": {
+    "givens_block": "[[cos(theta),-sin(theta)],[sin(theta),cos(theta)]]",
+    "rz": "exp(-i*phi*Z/2), phi in radians",
+    "sqiswap_single_excitation_block": "(I-iX)/sqrt(2), PyQPanda/OriginQ convention",
+    "native_identity_max_error": 3.551902380897394e-16
+  },
+  "measurement": {
+    "bit_order": "q[n-1]...q[0]",
+    "settings_total": 9,
+    "off_diagonal_reconstruction": "gamma[p,q]=(occupation[q]-occupation[p])/2 for each ordered pair",
+    "postselection_hamming_weight": 4
+  },
+  "settings": [
+    {
+      "id": "setting_00_diagonal",
+      "kind": "diagonal",
+      "pairs": [],
+      "analyzer_angle_radian": null,
+      "abstract_circuit": "abstract/setting_00_diagonal.qcir",
+      "native_circuit": "native/setting_00_diagonal.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 3.4416913763379853e-15,
+      "fit_frobenius_projector_error": 8.239022297586351e-15,
+      "fit_optimizer_cost": 3.394074421006254e-29,
+      "fit_optimizer_evaluations": 95,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5707963267948732,
+          "theta_over_pi": -0.49999999999999256
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.9355467596498881,
+          "theta_over_pi": -0.29779378258377004
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.3849277256316123,
+          "theta_over_pi": 0.12252630053478393
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -1.570796326794872,
+          "theta_over_pi": -0.4999999999999922
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.5707963267951077,
+          "theta_over_pi": 0.5000000000000672
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.5707963267951095,
+          "theta_over_pi": -0.5000000000000678
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": -0.12085492931035346,
+          "theta_over_pi": -0.03846931879352868
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 0.02398330583334895,
+          "theta_over_pi": 0.007634123350124347
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -0.3990091247646104,
+          "theta_over_pi": -0.12700854909011708
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": 1.256637610069869,
+          "theta_over_pi": 0.4000001746356108
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.570796326794862,
+          "theta_over_pi": 0.49999999999998895
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.5707963267948042,
+          "theta_over_pi": 0.4999999999999706
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.5707963267949705,
+          "theta_over_pi": -0.5000000000000235
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.24861033380808012,
+          "theta_over_pi": -0.0791351270585642
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.3562324140903998,
+          "theta_over_pi": 0.11339229918409215
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5707963267950524,
+          "theta_over_pi": -0.5000000000000496
+        }
+      ]
+    },
+    {
+      "id": "setting_01_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 0,
+      "abstract_circuit": "abstract/setting_01_offdiag.qcir",
+      "native_circuit": "native/setting_01_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 4.773959005888173e-15,
+      "fit_frobenius_projector_error": 8.285029696014222e-15,
+      "fit_optimizer_cost": 3.432085853191876e-29,
+      "fit_optimizer_evaluations": 154,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -2.1507822327468875,
+          "theta_over_pi": -0.684615247711781
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.8951705745983927,
+          "theta_over_pi": 0.6032515298992835
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -2.556381930497199,
+          "theta_over_pi": -0.8137216413388625
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 0.17776500294278716,
+          "theta_over_pi": 0.0565843578541798
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -0.7616692073023694,
+          "theta_over_pi": -0.24244683868611527
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.611404527412829,
+          "theta_over_pi": -0.5129259917168226
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": -0.5138601915291108,
+          "theta_over_pi": -0.16356677908001213
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.4206721731346963,
+          "theta_over_pi": -0.13390411155119306
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 2.1984551563169483,
+          "theta_over_pi": 0.6997900105874155
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -0.8140076276228514,
+          "theta_over_pi": -0.2591066753013673
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -0.08154166232676051,
+          "theta_over_pi": -0.02595551725446823
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.1191900344712271,
+          "theta_over_pi": 0.3562492524905691
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 0.679492530599976,
+          "theta_over_pi": 0.21628919007801428
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 2.7995324320575357,
+          "theta_over_pi": 0.8911188498160649
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.3420602215319821,
+          "theta_over_pi": 0.10888115018384746
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -2.1300246994008862,
+          "theta_over_pi": -0.6780079196349591
+        }
+      ]
+    },
+    {
+      "id": "setting_02_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 1,
+      "abstract_circuit": "abstract/setting_02_offdiag.qcir",
+      "native_circuit": "native/setting_02_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 2.0261570199409107e-15,
+      "fit_frobenius_projector_error": 8.127940453850212e-15,
+      "fit_optimizer_cost": 3.3031708010667387e-29,
+      "fit_optimizer_evaluations": 254,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -0.8102308205582909,
+          "theta_over_pi": -0.2579044802745089
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.8205690333661032,
+          "theta_over_pi": -0.26119523561670743
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.9929041196793695,
+          "theta_over_pi": 0.316051197326557
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -0.8630774838437946,
+          "theta_over_pi": -0.2747260956501107
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 2.1943719559788533,
+          "theta_over_pi": 0.698490287552531
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 0.9861580137069621,
+          "theta_over_pi": 0.3139038451022962
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": 1.6221246904070254,
+          "theta_over_pi": 0.516338325579377
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 3.056496219397632,
+          "theta_over_pi": 0.9729129637176468
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -2.148937213679842,
+          "theta_over_pi": -0.6840279599025427
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -1.9024363915575417,
+          "theta_over_pi": -0.6055643112685826
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 0.09481606749802106,
+          "theta_over_pi": 0.030180891653689697
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 2.0327609278696,
+          "theta_over_pi": 0.6470478995890291
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -0.33948360782190834,
+          "theta_over_pi": -0.10806098856705428
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.3902665367448483,
+          "theta_over_pi": 0.4425355830763855
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -1.4469158047564499,
+          "theta_over_pi": -0.46056760512955347
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -3.18794338910163,
+          "theta_over_pi": -1.0147538973453079
+        }
+      ]
+    },
+    {
+      "id": "setting_03_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 2,
+      "abstract_circuit": "abstract/setting_03_offdiag.qcir",
+      "native_circuit": "native/setting_03_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 1.8318679906315083e-15,
+      "fit_frobenius_projector_error": 8.231197741090276e-15,
+      "fit_optimizer_cost": 3.387630812646483e-29,
+      "fit_optimizer_evaluations": 18,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.8468287649757564,
+          "theta_over_pi": -0.5878638539803838
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 0.9117782141370779,
+          "theta_over_pi": 0.2902280195668332
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.7289018019939676,
+          "theta_over_pi": 0.23201664963185975
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -2.13825223168305,
+          "theta_over_pi": -0.6806268244992681
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.694827471207778,
+          "theta_over_pi": 0.2211704532775189
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 1.1922641075299896,
+          "theta_over_pi": 0.3795094523688898
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": -1.580875104431597,
+          "theta_over_pi": -0.5032081745624098
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.1991005190631585,
+          "theta_over_pi": 0.38168554974591834
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.634242874909608,
+          "theta_over_pi": 0.2018857773253575
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": 1.591875513562204,
+          "theta_over_pi": 0.5067097135407485
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 0.7652922497012271,
+          "theta_over_pi": 0.24360008889973472
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.3316229752702275,
+          "theta_over_pi": 0.4238687576979869
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.26846453913719,
+          "theta_over_pi": -0.4037648030809335
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.572883473315299,
+          "theta_over_pi": 0.5006643593713582
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 1.588755515301573,
+          "theta_over_pi": 0.5057165872495134
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -0.00015371269576807092,
+          "theta_over_pi": -4.89282706949383e-05
+        }
+      ]
+    },
+    {
+      "id": "setting_04_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 3,
+      "abstract_circuit": "abstract/setting_04_offdiag.qcir",
+      "native_circuit": "native/setting_04_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 2.2273849431542203e-15,
+      "fit_frobenius_projector_error": 8.277061276252716e-15,
+      "fit_optimizer_cost": 3.4254871685421114e-29,
+      "fit_optimizer_evaluations": 24,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.8552971989047663,
+          "theta_over_pi": 0.27224955403669115
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -1.6052841488185539,
+          "theta_over_pi": -0.5109778147030772
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 1.5733027530990416,
+          "theta_over_pi": 0.5007978202716005
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.3609401678156858,
+          "theta_over_pi": 0.43320070992035997
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.6065097587462394,
+          "theta_over_pi": 0.5113679384596644
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.631642804208558,
+          "theta_over_pi": -0.5193680353002271
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": 1.1199074998514578,
+          "theta_over_pi": 0.3564776288140911
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 0.8950604543336179,
+          "theta_over_pi": 0.2849065913465459
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.7116420185184034,
+          "theta_over_pi": 0.22652268991819605
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -1.4480759803891698,
+          "theta_over_pi": -0.4609369005031578
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -0.9388574054589841,
+          "theta_over_pi": -0.29884759387445825
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5692242029632562,
+          "theta_over_pi": -0.49949957744208373
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -0.5082323914513248,
+          "theta_over_pi": -0.16177539467778695
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.6199931659793734,
+          "theta_over_pi": 0.5156598402814131
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -1.573244458658993,
+          "theta_over_pi": -0.5007792645750235
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.0764297540515513,
+          "theta_over_pi": 0.024328346313204408
+        }
+      ]
+    },
+    {
+      "id": "setting_05_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 4,
+      "abstract_circuit": "abstract/setting_05_offdiag.qcir",
+      "native_circuit": "native/setting_05_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 3.1086244689504383e-15,
+      "fit_frobenius_projector_error": 8.21648734621109e-15,
+      "fit_optimizer_cost": 3.3755332155223486e-29,
+      "fit_optimizer_evaluations": 20,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5707963267948928,
+          "theta_over_pi": -0.4999999999999988
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 0.8170424718822036,
+          "theta_over_pi": 0.26007269623214724
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -0.8573179479713577,
+          "theta_over_pi": -0.27289277844208387
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": -1.5707963267948863,
+          "theta_over_pi": -0.4999999999999967
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.5707963267948948,
+          "theta_over_pi": 0.49999999999999944
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.5707963267949017,
+          "theta_over_pi": -0.5000000000000017
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": 1.1265828468934644,
+          "theta_over_pi": 0.35860245777126953
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.079027872697311,
+          "theta_over_pi": 0.34346523934741885
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -1.4345544458016026,
+          "theta_over_pi": -0.45663286236755907
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -1.5666213336229344,
+          "theta_over_pi": -0.49867105839861464
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.570796326794885,
+          "theta_over_pi": 0.49999999999999634
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.5707963267948757,
+          "theta_over_pi": 0.49999999999999334
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 1.5707963267948843,
+          "theta_over_pi": 0.4999999999999961
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.10971742202832604,
+          "theta_over_pi": -0.034924140118215395
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 1.2650130371135888,
+          "theta_over_pi": 0.40266615586463783
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5707963267948315,
+          "theta_over_pi": -0.4999999999999793
+        }
+      ]
+    },
+    {
+      "id": "setting_06_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 5,
+      "abstract_circuit": "abstract/setting_06_offdiag.qcir",
+      "native_circuit": "native/setting_06_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 3.4416913763379853e-15,
+      "fit_frobenius_projector_error": 8.370641239171366e-15,
+      "fit_optimizer_cost": 3.5033817377458165e-29,
+      "fit_optimizer_evaluations": 643,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.5707963267949019,
+          "theta_over_pi": 0.5000000000000017
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -1.3139538157254096,
+          "theta_over_pi": -0.4182444895343126
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 1.5672050528456687,
+          "theta_over_pi": 0.49885686199796647
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 0.8886079013921513,
+          "theta_over_pi": 0.28285267995415275
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -0.8726588279417458,
+          "theta_over_pi": -0.27777593219941726
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -1.2229634658655355,
+          "theta_over_pi": -0.38928136162659277
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": 2.3788232639406077,
+          "theta_over_pi": 0.7572029623962883
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 0.9958451042083579,
+          "theta_over_pi": 0.3169873417772476
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -1.5572508308915907,
+          "theta_over_pi": -0.4956883347407157
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -1.100625447845902,
+          "theta_over_pi": -0.35033996103481274
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.5707963268149177,
+          "theta_over_pi": 0.5000000000063729
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.004388904502505359,
+          "theta_over_pi": 0.0013970316926640073
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 1.5707963267949396,
+          "theta_over_pi": 0.5000000000000138
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 1.400852387804021,
+          "theta_over_pi": 0.4459051641221894
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.017974614855473747,
+          "theta_over_pi": 0.005721497608843322
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.570796326794756,
+          "theta_over_pi": -0.49999999999995526
+        }
+      ]
+    },
+    {
+      "id": "setting_07_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 6,
+      "abstract_circuit": "abstract/setting_07_offdiag.qcir",
+      "native_circuit": "native/setting_07_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 4.440892098500626e-15,
+      "fit_frobenius_projector_error": 8.336714575517835e-15,
+      "fit_optimizer_cost": 3.4750404956825756e-29,
+      "fit_optimizer_evaluations": 114,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.570796326794909,
+          "theta_over_pi": -0.500000000000004
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.6803201250368371,
+          "theta_over_pi": -0.2165526215690179
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 1.5941930424964554,
+          "theta_over_pi": 0.5074474059120377
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.6048364114667968,
+          "theta_over_pi": 0.5108352954775992
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.507578173826873,
+          "theta_over_pi": 0.16156715074020825
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 2.482477670032877,
+          "theta_over_pi": 0.790197184601967
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": -2.4728108791285575,
+          "theta_over_pi": -0.7871201494894505
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.8089067831357044,
+          "theta_over_pi": -0.2574830260732223
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 0.8467628419938064,
+          "theta_over_pi": 0.26953298385971164
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": -1.9951916002064471,
+          "theta_over_pi": -0.6350892111765694
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.5369588837438624,
+          "theta_over_pi": 0.4892292073536748
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.027771938803883768,
+          "theta_over_pi": 0.008840082679767443
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 1.3105049571441076,
+          "theta_over_pi": 0.4171466837518344
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.03385683117524836,
+          "theta_over_pi": -0.010776964077937122
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -0.2695871851769386,
+          "theta_over_pi": -0.08581226623027982
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 1.570796326794586,
+          "theta_over_pi": 0.49999999999990113
+        }
+      ]
+    },
+    {
+      "id": "setting_08_offdiag",
+      "kind": "off_diagonal",
+      "pairs": [
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "analyzer_angle_radian": 0.7853981633974483,
+      "swap_network_layer": 7,
+      "abstract_circuit": "abstract/setting_08_offdiag.qcir",
+      "native_circuit": "native/setting_08_offdiag.qcir",
+      "givens_count": 16,
+      "sqiswap_count": 32,
+      "rz_count": 48,
+      "x_count": 4,
+      "fit_max_projector_error": 3.816391647148976e-15,
+      "fit_frobenius_projector_error": 8.338293454538252e-15,
+      "fit_optimizer_cost": 3.476356886699773e-29,
+      "fit_optimizer_evaluations": 178,
+      "givens": [
+        {
+          "index": 0,
+          "layer": 0,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": -1.5707963267948732,
+          "theta_over_pi": -0.49999999999999256
+        },
+        {
+          "index": 1,
+          "layer": 1,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": 2.2058751572052886,
+          "theta_over_pi": 0.7021518702256668
+        },
+        {
+          "index": 2,
+          "layer": 1,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -1.7982700814592456,
+          "theta_over_pi": -0.5724071449570085
+        },
+        {
+          "index": 3,
+          "layer": 2,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 1.5549320932334858,
+          "theta_over_pi": 0.4949502576206743
+        },
+        {
+          "index": 4,
+          "layer": 2,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.44783543257568165,
+          "theta_over_pi": 0.1425504455722339
+        },
+        {
+          "index": 5,
+          "layer": 2,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": 0.39566391693403774,
+          "theta_over_pi": 0.12594373636630637
+        },
+        {
+          "index": 6,
+          "layer": 3,
+          "mode_a": 0,
+          "mode_b": 1,
+          "theta_radian": -3.02073772427944,
+          "theta_over_pi": -0.9615306812064714
+        },
+        {
+          "index": 7,
+          "layer": 3,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -0.22285324359539824,
+          "theta_over_pi": -0.0709363906045398
+        },
+        {
+          "index": 8,
+          "layer": 3,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": 2.130588284441222,
+          "theta_over_pi": 0.6781873143250032
+        },
+        {
+          "index": 9,
+          "layer": 3,
+          "mode_a": 6,
+          "mode_b": 7,
+          "theta_radian": 1.2566376100698684,
+          "theta_over_pi": 0.40000017463561055
+        },
+        {
+          "index": 10,
+          "layer": 4,
+          "mode_a": 1,
+          "mode_b": 2,
+          "theta_radian": 0.815688774787901,
+          "theta_over_pi": 0.2596418010641324
+        },
+        {
+          "index": 11,
+          "layer": 4,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 0.11514158007054338,
+          "theta_over_pi": 0.036650703247276484
+        },
+        {
+          "index": 12,
+          "layer": 4,
+          "mode_a": 5,
+          "mode_b": 6,
+          "theta_radian": -0.8463608655079748,
+          "theta_over_pi": -0.26940503077025807
+        },
+        {
+          "index": 13,
+          "layer": 5,
+          "mode_a": 2,
+          "mode_b": 3,
+          "theta_radian": -2.7969090453436682,
+          "theta_over_pi": -0.8902837998897577
+        },
+        {
+          "index": 14,
+          "layer": 5,
+          "mode_a": 4,
+          "mode_b": 5,
+          "theta_radian": -0.4844182190748658,
+          "theta_over_pi": -0.1541951081790751
+        },
+        {
+          "index": 15,
+          "layer": 6,
+          "mode_a": 3,
+          "mode_b": 4,
+          "theta_radian": 2.3561944901921894,
+          "theta_over_pi": 0.7499999999999505
+        }
+      ]
+    }
+  ]
+}

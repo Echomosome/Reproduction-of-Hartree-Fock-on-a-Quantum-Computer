@@ -1,0 +1,9 @@
+stage,inputs,operation,outputs,code
+1,R=1.3 Å; 8 centered Cartesian H coordinates; STO-3G constants,analytic contracted Gaussian integrals,reference/integrals_and_orbitals.npz; AO CSV matrices,code/h8hf/integrals.py
+2,"S, h_core, (pq|rs), 8 electrons",RHF Roothaan iterations with DIIS,reference/rhf_reference.json; C_HF; E_RHF,code/h8hf/rhf.py
+3,"C_core, S, C_HF",U=C_core^T S C_HF and gamma=U_occ U_occ^T,reference/orbital_rotation_core_to_hf.csv; gamma_reference.csv,code/run_all.py
+4,gamma_reference and eight pi/4 analysis bases,fit 16-angle nearest-neighbor diamond per setting,circuits/manifest.json; abstract/native qcir files,code/h8hf/circuits.py
+5,fitted occupied orbitals,"Pr(S)=|det(C_occ[S,:])|^2 and multinomial sampling",data/exact_probabilities; data/sample_1000_shots,code/h8hf/sampling.py
+6,nine bitstring distributions and manifest pair map,normalize; weight-4 post-select; occupations; 1-RDM,raw gamma and per-setting diagnostics,code/h8hf/data_processing.py
+7,raw gamma; core-basis molecular integrals,rank-4 projection; Wick/RHF energy; fidelity,results/exact and results/sample_1000_shots,code/h8hf/data_processing.py; code/h8hf/rhf.py
+8,"previous Gaussian log/out, when supplied",parse final SCF Done energy,results/gaussian_comparison.json,code/h8hf/gaussian.py

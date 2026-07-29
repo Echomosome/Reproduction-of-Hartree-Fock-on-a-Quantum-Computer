@@ -1,0 +1,21 @@
+{
+  "reference_total_energy_hartree": -3.9025797872882357,
+  "exact_reconstructed_total_energy_hartree": -3.902579787288232,
+  "exact_energy_error_hartree": 0.0,
+  "sample_1000_projected_total_energy_hartree": -3.8960753877232044,
+  "sample_1000_projected_error_millihartree": 6.504399565027796,
+  "sample_1000_projected_fidelity": 0.9949302642751234,
+  "bootstrap_projected_energy_95_percent_hartree": [
+    -3.897209019132322,
+    -3.8868023697915204
+  ],
+  "settings": 9,
+  "givens_per_setting": 16,
+  "sqiswap_per_setting": 32,
+  "rz_per_setting": 48,
+  "gaussian": {
+    "status": "no_log_present",
+    "message": "Previous Gaussian output was not available in this workspace.",
+    "analytic_rhf_reference_hartree": -3.9025797872882357
+  }
+}
