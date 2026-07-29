@@ -1,0 +1,5 @@
+setting,file,value_type,shots,particle_number_pass_probability,tv_distance_full_vs_exact_circuit
+z_diagonal,z_diagonal.json,counts,1000,1.0,0.03055007922917779
+matching_01_23,matching_01_23.json,counts,1000,1.0,0.0029503135492586216
+matching_02_13,matching_02_13.json,counts,1000,1.0,0.011057554150953951
+matching_03_12,matching_03_12.json,counts,1000,1.0,0.023853420897348876

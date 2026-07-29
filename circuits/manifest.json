@@ -1,0 +1,250 @@
+{
+  "model": "linear H4, RHF/STO-3G, Lowdin orthogonalized AO basis",
+  "spacing_angstrom": 1.3,
+  "encoding": {
+    "qubits": 4,
+    "particles": 2,
+    "meaning": "one spin sector; closed-shell RHF duplicates alpha and beta",
+    "initial_occupied_modes": [
+      0,
+      1
+    ],
+    "returned_bitstring_order": "q[3]q[2]q[1]q[0]"
+  },
+  "angle_units": "radians",
+  "sqiswap_convention": "+i",
+  "compilation": "Each state-preparation-plus-analyzer matrix is decomposed into nearest-neighbour real Givens rotations, then each Givens is compiled to two SQISWAP gates and RZ phases.",
+  "circuits": [
+    {
+      "setting": "z_diagonal",
+      "kind": "diagonal",
+      "gate_body_file": "gate_body_radians/H4-00-z-diagonal.txt",
+      "originir_file": "originir_full/H4-00-z-diagonal.originir",
+      "measurement_map": [],
+      "givens_rotations": [
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -0.59570392650104,
+          "theta_over_pi": -0.18961844904378325
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 2.2641053780518927,
+          "theta_over_pi": 0.7206871251958064
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -2.7960426842880395,
+          "theta_over_pi": -0.8900080286007465
+        },
+        {
+          "first": 0,
+          "second": 1,
+          "theta_radians": 1.1603736396866262,
+          "theta_over_pi": 0.36935840117932095
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 0.880643874734971,
+          "theta_over_pi": 0.28031765153534105
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": 0.5995450087965446,
+          "theta_over_pi": 0.19084110351208788
+        }
+      ],
+      "gate_counts": {
+        "X": 2,
+        "SQISWAP": 12,
+        "RZ": 18
+      },
+      "max_exact_gamma_closure_error": 2.1281784111250684e-13
+    },
+    {
+      "setting": "matching_01_23",
+      "kind": "offdiagonal_matching",
+      "gate_body_file": "gate_body_radians/H4-01-matching-01-23.txt",
+      "originir_file": "originir_full/H4-01-matching-01-23.originir",
+      "measurement_map": [
+        {
+          "physical_left": 0,
+          "physical_right": 1,
+          "logical_i": 0,
+          "logical_j": 1
+        },
+        {
+          "physical_left": 2,
+          "physical_right": 3,
+          "logical_i": 2,
+          "logical_j": 3
+        }
+      ],
+      "givens_rotations": [
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": 0.8000882690093615,
+          "theta_over_pi": 0.25467600584535593
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 2.8777058279178998,
+          "theta_over_pi": 0.9160022145549778
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -1.5214355375829802,
+          "theta_over_pi": -0.4842879728040128
+        },
+        {
+          "first": 0,
+          "second": 1,
+          "theta_radians": 0.8024742424741613,
+          "theta_over_pi": 0.25543548478737393
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 1.3880723926999616,
+          "theta_over_pi": 0.4418371653351868
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -0.1858531546009037,
+          "theta_over_pi": -0.059158896487912116
+        }
+      ],
+      "gate_counts": {
+        "X": 2,
+        "SQISWAP": 12,
+        "RZ": 18
+      },
+      "max_exact_gamma_closure_error": 1.544922847592562e-13
+    },
+    {
+      "setting": "matching_02_13",
+      "kind": "offdiagonal_matching",
+      "gate_body_file": "gate_body_radians/H4-02-matching-02-13.txt",
+      "originir_file": "originir_full/H4-02-matching-02-13.originir",
+      "measurement_map": [
+        {
+          "physical_left": 0,
+          "physical_right": 1,
+          "logical_i": 0,
+          "logical_j": 2
+        },
+        {
+          "physical_left": 2,
+          "physical_right": 3,
+          "logical_i": 1,
+          "logical_j": 3
+        }
+      ],
+      "givens_rotations": [
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": 1.3847485609473924,
+          "theta_over_pi": 0.4407791568283324
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 1.7590334655843654,
+          "theta_over_pi": 0.5599177422236382
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -0.8035295060268968,
+          "theta_over_pi": -0.2557713856087391
+        },
+        {
+          "first": 0,
+          "second": 1,
+          "theta_radians": 0.8024742424741613,
+          "theta_over_pi": 0.25543548478737393
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 1.3880723926999616,
+          "theta_over_pi": 0.4418371653351868
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -0.1858531546009037,
+          "theta_over_pi": -0.059158896487912116
+        }
+      ],
+      "gate_counts": {
+        "X": 2,
+        "SQISWAP": 12,
+        "RZ": 18
+      },
+      "max_exact_gamma_closure_error": 2.0404564209442202e-13
+    },
+    {
+      "setting": "matching_03_12",
+      "kind": "offdiagonal_matching",
+      "gate_body_file": "gate_body_radians/H4-03-matching-03-12.txt",
+      "originir_file": "originir_full/H4-03-matching-03-12.originir",
+      "measurement_map": [
+        {
+          "physical_left": 0,
+          "physical_right": 1,
+          "logical_i": 0,
+          "logical_j": 3
+        },
+        {
+          "physical_left": 2,
+          "physical_right": 3,
+          "logical_i": 1,
+          "logical_j": 2
+        }
+      ],
+      "givens_rotations": [
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 1.5707963267948966,
+          "theta_over_pi": 0.5
+        },
+        {
+          "first": 2,
+          "second": 3,
+          "theta_radians": -0.5939350951687845,
+          "theta_over_pi": -0.18905541254373467
+        },
+        {
+          "first": 0,
+          "second": 1,
+          "theta_radians": 0.9712513179983515,
+          "theta_over_pi": 0.30915889648791195
+        },
+        {
+          "first": 1,
+          "second": 2,
+          "theta_radians": 1.5707963267948974,
+          "theta_over_pi": 0.5000000000000003
+        }
+      ],
+      "gate_counts": {
+        "X": 2,
+        "SQISWAP": 8,
+        "RZ": 12
+      },
+      "max_exact_gamma_closure_error": 2.4326228825615024e-13
+    }
+  ]
+}

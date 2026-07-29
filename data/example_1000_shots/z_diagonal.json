@@ -1,0 +1,26 @@
+{
+  "status": "Completed",
+  "setting": "z_diagonal",
+  "shots": 1000,
+  "source": "synthetic multinomial sample from the exact native circuit",
+  "bitstring_order": "q[3]q[2]q[1]q[0]",
+  "result": {
+    "key": [
+      "0011",
+      "0101",
+      "0110",
+      "1001",
+      "1010",
+      "1100"
+    ],
+    "value": [
+      29,
+      258,
+      220,
+      196,
+      266,
+      31
+    ],
+    "value_type": "counts"
+  }
+}

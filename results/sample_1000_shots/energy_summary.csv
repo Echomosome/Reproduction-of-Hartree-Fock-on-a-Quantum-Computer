@@ -1,0 +1,4 @@
+quantity,energy_hartree,error_vs_pyscf_millihartree
+PySCF RHF,-1.946741626456309,0.0
+Measured raw,-1.9320431753189344,14.698451137374668
+Rank-2 projected,-1.9457437675291505,0.9978589271586458

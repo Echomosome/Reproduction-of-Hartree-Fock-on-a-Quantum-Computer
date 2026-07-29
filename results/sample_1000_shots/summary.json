@@ -1,0 +1,310 @@
+{
+  "model": {
+    "molecule": "linear H4",
+    "method": "RHF",
+    "basis": "STO-3G",
+    "spacing_angstrom": 1.3,
+    "encoding": "4 qubits, 2 particles, one RHF spin sector",
+    "bitstring_order": "q3q2q1q0"
+  },
+  "input": {
+    "directory": "data/example_1000_shots",
+    "settings": [
+      {
+        "setting": "z_diagonal",
+        "file": "z_diagonal.json",
+        "value_type": "counts",
+        "shots": 1000,
+        "particle_number_pass_probability": 1.0,
+        "tv_distance_full_vs_exact_circuit": 0.03055007922917779
+      },
+      {
+        "setting": "matching_01_23",
+        "file": "matching_01_23.json",
+        "value_type": "counts",
+        "shots": 1000,
+        "particle_number_pass_probability": 1.0,
+        "tv_distance_full_vs_exact_circuit": 0.0029503135492586216
+      },
+      {
+        "setting": "matching_02_13",
+        "file": "matching_02_13.json",
+        "value_type": "counts",
+        "shots": 1000,
+        "particle_number_pass_probability": 1.0,
+        "tv_distance_full_vs_exact_circuit": 0.011057554150953951
+      },
+      {
+        "setting": "matching_03_12",
+        "file": "matching_03_12.json",
+        "value_type": "counts",
+        "shots": 1000,
+        "particle_number_pass_probability": 1.0,
+        "tv_distance_full_vs_exact_circuit": 0.023853420897348876
+      }
+    ],
+    "mean_setting_tv_vs_exact_circuit": 0.01710284195668481,
+    "minimum_particle_number_pass_probability": 1.0
+  },
+  "gamma_reference": [
+    [
+      0.5026076333799052,
+      0.46482106460360406,
+      0.0010334158640554906,
+      -0.18421050513089762
+    ],
+    [
+      0.46482106460360406,
+      0.4973923666200958,
+      0.1842105051308982,
+      0.0010334158640554836
+    ],
+    [
+      0.0010334158640554906,
+      0.1842105051308982,
+      0.49739236662009645,
+      0.46482106460360406
+    ],
+    [
+      -0.18421050513089762,
+      0.0010334158640554836,
+      0.46482106460360406,
+      0.5026076333799046
+    ]
+  ],
+  "gamma_raw": [
+    [
+      0.48300000000000004,
+      0.4635,
+      -0.0050000000000000044,
+      -0.17600000000000002
+    ],
+    [
+      0.4635,
+      0.515,
+      0.17600000000000002,
+      0.006000000000000005
+    ],
+    [
+      -0.0050000000000000044,
+      0.17600000000000002,
+      0.509,
+      0.4635
+    ],
+    [
+      -0.17600000000000002,
+      0.006000000000000005,
+      0.4635,
+      0.493
+    ]
+  ],
+  "gamma_projected_rank2": [
+    [
+      0.4872741380336166,
+      0.46724032620289324,
+      -0.008461255850131362,
+      -0.17734975939218328
+    ],
+    [
+      0.46724032620289324,
+      0.5161500246099984,
+      0.1772719283196509,
+      0.0005636530343097058
+    ],
+    [
+      -0.008461255850131362,
+      0.1772719283196509,
+      0.5046653259549669,
+      0.4674198383819465
+    ],
+    [
+      -0.17734975939218328,
+      0.0005636530343097058,
+      0.4674198383819465,
+      0.4919105114014184
+    ]
+  ],
+  "gamma_raw_metrics": {
+    "trace": 2.0,
+    "hermiticity_frobenius": 0.0,
+    "idempotency_frobenius": 0.013591614997857982,
+    "natural_occupations_ascending": [
+      -0.0015047033949211518,
+      0.009599315978932883,
+      0.9904276239341907,
+      1.001477763481797
+    ],
+    "frobenius_error": 0.036335937672619466,
+    "max_abs_error": 0.019607633379905176
+  },
+  "gamma_projected_metrics": {
+    "trace": 2.0,
+    "hermiticity_frobenius": 0.0,
+    "idempotency_frobenius": 5.174589053964483e-16,
+    "natural_occupations_ascending": [
+      -8.326672684688674e-17,
+      2.7755575615628914e-17,
+      0.9999999999999998,
+      1.0000000000000002
+    ],
+    "frobenius_error": 0.033921517791074836,
+    "max_abs_error": 0.018757657989902587
+  },
+  "fidelities": {
+    "one_spin_slater_fidelity": 0.999424687043927,
+    "full_rhf_determinant_fidelity": 0.9988497050728513
+  },
+  "energy": {
+    "pyscf_rhf_hartree": -1.946741626456309,
+    "functional_target": {
+      "nuclear_repulsion_hartree": 1.7639240364,
+      "one_electron_hartree": -5.771939065970505,
+      "coulomb_hartree": 3.2154140996775578,
+      "exchange_hartree": 1.1541406965633625,
+      "electronic_hartree": -3.71066566285631,
+      "total_hartree": -1.94674162645631
+    },
+    "functional_closure_error_hartree": -8.881784197001252e-16,
+    "raw": {
+      "nuclear_repulsion_hartree": 1.7639240364,
+      "one_electron_hartree": -5.778287338795765,
+      "coulomb_hartree": 3.2336357912960554,
+      "exchange_hartree": 1.1513156642192244,
+      "electronic_hartree": -3.6959672117189344,
+      "total_hartree": -1.9320431753189344
+    },
+    "projected_rank2": {
+      "nuclear_repulsion_hartree": 1.7639240364,
+      "one_electron_hartree": -5.7838821221607315,
+      "coulomb_hartree": 3.230993987271234,
+      "exchange_hartree": 1.1567796690396528,
+      "electronic_hartree": -3.7096678039291504,
+      "total_hartree": -1.9457437675291505
+    },
+    "raw_error_millihartree": 14.698451137374668,
+    "projected_error_millihartree": 0.9978589271586458,
+    "chemical_accuracy_hartree": 0.001593601
+  },
+  "bootstrap_measured_95_percent": {
+    "mean_setting_tv_vs_ideal": {
+      "q025": 0.016933583483297727,
+      "median": 0.025975831243324865,
+      "q975": 0.03630226585448194
+    },
+    "raw_energy_hartree": {
+      "q025": -1.9645371987648834,
+      "median": -1.932201890688389,
+      "q975": -1.8989676245749363
+    },
+    "projected_energy_hartree": {
+      "q025": -1.9464604324152484,
+      "median": -1.944870258336332,
+      "q975": -1.9409562138898266
+    },
+    "raw_energy_error_millihartree": {
+      "q025": -17.795572308574293,
+      "median": 14.539735767920003,
+      "q975": 47.77400188137271
+    },
+    "projected_energy_error_millihartree": {
+      "q025": 0.2811940410607727,
+      "median": 1.8713681199771237,
+      "q975": 5.785412566482402
+    },
+    "raw_gamma_frobenius_error": {
+      "q025": 0.024984622274212522,
+      "median": 0.05431861068313063,
+      "q975": 0.08972117512996072
+    },
+    "projected_gamma_frobenius_error": {
+      "q025": 0.019803795048147083,
+      "median": 0.04986884461159585,
+      "q975": 0.08584918990495022
+    },
+    "raw_idempotency_frobenius": {
+      "q025": 0.00605690217060978,
+      "median": 0.020272452324437702,
+      "q975": 0.038174819096677026
+    },
+    "one_spin_slater_fidelity": {
+      "q025": 0.9963151177600174,
+      "median": 0.9987567625596903,
+      "q975": 0.9998039043321674
+    },
+    "full_rhf_determinant_fidelity": {
+      "q025": 0.9926438138772438,
+      "median": 0.997515070760788,
+      "q975": 0.9996078471184016
+    }
+  },
+  "bootstrap_ideal_shot_model_95_percent": {
+    "mean_setting_tv_vs_ideal": {
+      "q025": 0.012475087200052882,
+      "median": 0.019991268916858866,
+      "q975": 0.02855135610325026
+    },
+    "raw_energy_hartree": {
+      "q025": -1.9787556914448527,
+      "median": -1.9466967367011099,
+      "q975": -1.9140622572948205
+    },
+    "projected_energy_hartree": {
+      "q025": -1.9466089565002682,
+      "median": -1.9458004514276617,
+      "q975": -1.9433665644902312
+    },
+    "raw_energy_error_millihartree": {
+      "q025": -32.014064988543716,
+      "median": 0.04488975519922889,
+      "q975": 32.6793691614885
+    },
+    "projected_energy_error_millihartree": {
+      "q025": 0.1326699560409872,
+      "median": 0.9411750286474341,
+      "q975": 3.375061966077984
+    },
+    "raw_gamma_frobenius_error": {
+      "q025": 0.018855172287810248,
+      "median": 0.04138282037171327,
+      "q975": 0.07300298134110085
+    },
+    "projected_gamma_frobenius_error": {
+      "q025": 0.01405368917570988,
+      "median": 0.03735314626590988,
+      "q975": 0.06878725713206416
+    },
+    "raw_idempotency_frobenius": {
+      "q025": 0.005225342520393321,
+      "median": 0.01668381461217858,
+      "q975": 0.032929706799621004
+    },
+    "one_spin_slater_fidelity": {
+      "q025": 0.9976346815835321,
+      "median": 0.9993024747231787,
+      "q975": 0.9999012484706462
+    },
+    "full_rhf_determinant_fidelity": {
+      "q025": 0.9952749579437896,
+      "median": 0.9986054359883458,
+      "q975": 0.9998025066933022
+    }
+  },
+  "gaussian": null,
+  "acceptance": {
+    "particle_number_pass": true,
+    "particle_number_threshold": 0.95,
+    "shot_model_pass": true,
+    "ideal_shot_mean_tv_q975": 0.02855135610325026,
+    "one_spin_slater_fidelity_pass": true,
+    "one_spin_slater_fidelity_threshold": 0.99,
+    "projected_energy_point_within_1_kcal_per_mol": true,
+    "projected_energy_95_percent_interval_millihartree": {
+      "q025": 0.2811940410607727,
+      "median": 1.8713681199771237,
+      "q975": 5.785412566482402
+    },
+    "projected_energy_95_percent_within_1_kcal_per_mol": false,
+    "overall_point_estimate_pass": true,
+    "overall_molecular_reproduction_pass": false
+  }
+}

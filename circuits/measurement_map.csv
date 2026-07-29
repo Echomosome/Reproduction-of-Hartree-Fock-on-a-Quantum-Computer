@@ -1,0 +1,7 @@
+setting,physical_left,physical_right,logical_i,logical_j,formula
+matching_01_23,0,1,0,1,(<n_left>-<n_right>)/2
+matching_01_23,2,3,2,3,(<n_left>-<n_right>)/2
+matching_02_13,0,1,0,2,(<n_left>-<n_right>)/2
+matching_02_13,2,3,1,3,(<n_left>-<n_right>)/2
+matching_03_12,0,1,0,3,(<n_left>-<n_right>)/2
+matching_03_12,2,3,1,2,(<n_left>-<n_right>)/2

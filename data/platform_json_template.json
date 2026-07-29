@@ -1,0 +1,21 @@
+{
+  "status": "Completed",
+  "setting": "replace_with_one_of_the_four_setting_names",
+  "shots": 5000,
+  "bitstring_order": "q[3]q[2]q[1]q[0]",
+  "result": {
+    "key": [
+      "0000",
+      "0001",
+      "0010",
+      "0011"
+    ],
+    "value": [
+      0,
+      0,
+      0,
+      123
+    ],
+    "value_type": "counts"
+  }
+}

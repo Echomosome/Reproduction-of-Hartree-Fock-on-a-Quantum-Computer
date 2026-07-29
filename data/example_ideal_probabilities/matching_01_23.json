@@ -1,0 +1,26 @@
+{
+  "status": "Completed",
+  "setting": "matching_01_23",
+  "shots": null,
+  "source": "synthetic exact native-circuit probabilities",
+  "bitstring_order": "q[3]q[2]q[1]q[0]",
+  "result": {
+    "key": [
+      "0011",
+      "0101",
+      "0110",
+      "1001",
+      "1010",
+      "1100"
+    ],
+    "value": [
+      0.03393457814888593,
+      0.9308786187545833,
+      7.867700192177137e-06,
+      7.867700191332604e-06,
+      0.001236489547272135,
+      0.03393457814887508
+    ],
+    "value_type": "probabilities"
+  }
+}
