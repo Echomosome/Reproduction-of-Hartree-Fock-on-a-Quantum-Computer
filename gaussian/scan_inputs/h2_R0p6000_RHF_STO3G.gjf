@@ -1,0 +1,11 @@
+%chk=h2_R0p6000_RHF_STO3G.chk
+%mem=2GB
+%nprocshared=4
+#p RHF/STO-3G SP SCF=(Tight,Conver=10) Pop=Full NoSymm
+
+H2 RHF/STO-3G R=0.6000 Angstrom
+
+0 1
+H  0.0000000000  0.0000000000  -0.3000000000
+H  0.0000000000  0.0000000000   0.3000000000
+

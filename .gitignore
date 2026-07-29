@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+gaussian/*.chk
+gaussian/*.fchk
+gaussian/*.log
+results_rebuilt/
+results_scan/

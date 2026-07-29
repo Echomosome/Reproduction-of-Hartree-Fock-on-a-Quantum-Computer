@@ -1,0 +1,11 @@
+{
+  "status": "Completed",
+  "setting": "z_diagonal_or_real_offdiagonal",
+  "shots": 10000,
+  "bitstring_order": "q[1]q[0]",
+  "result": {
+    "key": ["00", "01", "10", "11"],
+    "value": [0, 5000, 5000, 0],
+    "value_type": "counts"
+  }
+}

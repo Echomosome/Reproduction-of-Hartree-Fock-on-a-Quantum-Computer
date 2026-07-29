@@ -1,0 +1,17 @@
+{
+	"createTime":"2026-07-29 03:26:37.444",
+	"endTime":"2026-07-29 03:26:38.755",
+	"machineTime":"-",
+	"result":{
+		"value":[
+			0.484,
+			0.5159999
+		],
+		"key":[
+			"01",
+			"10"
+		]
+	},
+	"status":"Completed",
+	"taskId":"5197EE4C344A7D0377D55EA3D1A87CDD"
+}

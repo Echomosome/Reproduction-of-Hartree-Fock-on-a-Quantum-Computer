@@ -1,0 +1,144 @@
+{
+  "model": {
+    "molecule": "H2",
+    "method": "RHF",
+    "basis": "STO-3G",
+    "bond_length_angstrom": 0.7414,
+    "encoding": "2 qubits, 1 particle, one RHF spin sector",
+    "bitstring_order": "q1q0"
+  },
+  "input": {
+    "diagonal_file": "z_diagonal.json",
+    "real_file": "real_offdiagonal.json",
+    "diagonal_value_type": "counts",
+    "real_value_type": "counts",
+    "diagonal_shots": 10000,
+    "real_shots": 10000,
+    "diagonal_particle_number_pass_probability": 1.0,
+    "real_particle_number_pass_probability": 1.0
+  },
+  "gamma_raw": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      0.5
+    ]
+  ],
+  "gamma_projected_rank1": [
+    [
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    [
+      0.4999999999999999,
+      0.4999999999999999
+    ]
+  ],
+  "gamma_reference": [
+    [
+      0.4999999999999999,
+      0.5000000000000001
+    ],
+    [
+      0.5000000000000001,
+      0.5000000000000002
+    ]
+  ],
+  "gamma_raw_metrics": {
+    "trace": 1.0,
+    "hermiticity_frobenius": 0.0,
+    "idempotency_frobenius": 0.0,
+    "natural_occupations_ascending": [
+      0.0,
+      1.0
+    ],
+    "frobenius_error": 2.9373740229761033e-16,
+    "max_abs_error": 2.220446049250313e-16
+  },
+  "gamma_projected_metrics": {
+    "trace": 0.9999999999999998,
+    "hermiticity_frobenius": 0.0,
+    "idempotency_frobenius": 2.220446049250313e-16,
+    "natural_occupations_ascending": [
+      0.0,
+      0.9999999999999998
+    ],
+    "frobenius_error": 4.577566798522237e-16,
+    "max_abs_error": 3.3306690738754696e-16
+  },
+  "fidelities": {
+    "one_spin_orbital_fidelity": 0.9999999999999998,
+    "two_electron_rhf_determinant_fidelity": 0.9999999999999996
+  },
+  "energy": {
+    "pyscf_rhf_hartree": -1.116684387085341,
+    "functional_target_hartree": -1.116684387085341,
+    "functional_closure_error_hartree": 0.0,
+    "raw_components": {
+      "nuclear_repulsion_hartree": 0.7137539936876182,
+      "one_electron_hartree": -2.504927147129796,
+      "coulomb_hartree": 1.3489775327136746,
+      "exchange_hartree": 0.6744887663568373,
+      "electronic_hartree": -1.8304383807729585,
+      "total_hartree": -1.1166843870853405
+    },
+    "projected_components": {
+      "nuclear_repulsion_hartree": 0.7137539936876182,
+      "one_electron_hartree": -2.504927147129795,
+      "coulomb_hartree": 1.3489775327136737,
+      "exchange_hartree": 0.674488766356837,
+      "electronic_hartree": -1.830438380772958,
+      "total_hartree": -1.11668438708534
+    },
+    "raw_error_hartree": 4.440892098500626e-16,
+    "raw_error_millihartree": 4.440892098500626e-13,
+    "projected_error_hartree": 8.881784197001252e-16,
+    "projected_error_millihartree": 8.881784197001252e-13,
+    "chemical_accuracy_hartree": 0.001593601
+  },
+  "bootstrap_95_percent": {
+    "raw_energy_hartree": {
+      "q025": -1.116715473951872,
+      "median": -1.1166871522759925,
+      "q975": -1.1166843966534739
+    },
+    "projected_energy_hartree": {
+      "q025": -1.1166842968396078,
+      "median": -1.1166583070605602,
+      "q975": -1.1163913044079337
+    },
+    "raw_energy_error_millihartree": {
+      "q025": -0.031086866531193635,
+      "median": -0.0027651906515657743,
+      "q975": -9.568132952608721e-06
+    },
+    "projected_energy_error_millihartree": {
+      "q025": 9.024573310867368e-05,
+      "median": 0.026080024780661404,
+      "q975": 0.2930826774072415
+    },
+    "raw_gamma_frobenius_error": {
+      "q025": 0.00028284271247435236,
+      "median": 0.004808326112068504,
+      "q975": 0.01612203461105304
+    },
+    "projected_gamma_frobenius_error": {
+      "q025": 0.0002828426955037789,
+      "median": 0.004808242738183486,
+      "q975": 0.016118892836354558
+    }
+  },
+  "gaussian": null,
+  "acceptance": {
+    "circuit_level_pass": true,
+    "circuit_thresholds": {
+      "particle_number_pass_probability_min": 0.95,
+      "one_spin_orbital_fidelity_min": 0.99
+    },
+    "projected_energy_within_1_kcal_per_mol": true,
+    "important_boundary": "The Gaussian comparison is molecular-level only when geometry, basis, RHF definition, orbital basis transform, and nuclear repulsion are identical."
+  }
+}

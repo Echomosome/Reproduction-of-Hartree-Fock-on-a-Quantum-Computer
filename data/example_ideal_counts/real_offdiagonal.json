@@ -1,0 +1,18 @@
+{
+  "status": "Completed",
+  "setting": "real_offdiagonal",
+  "shots": 10000,
+  "source": "synthetic exact native-circuit distribution",
+  "bitstring_order": "q[1]q[0]",
+  "result": {
+    "key": [
+      "01",
+      "10"
+    ],
+    "value": [
+      10000,
+      0
+    ],
+    "value_type": "counts"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "model": "H2 RHF/STO-3G in the Lowdin orthogonalized AO basis",
+  "primary_encoding": {
+    "qubits": 2,
+    "particles": 1,
+    "meaning": "one spin sector; RHF duplicates it for alpha and beta",
+    "bitstring_order": "q[1]q[0]"
+  },
+  "angle_units": "radians",
+  "sqiswap_convention": "+i",
+  "givens_theta_radians": 0.7853981633974485,
+  "givens_theta_over_pi": 0.25000000000000006,
+  "circuits": [
+    {
+      "setting": "z_diagonal",
+      "file": "gate_body_radians/H2-00-z-diagonal.txt",
+      "extracts": [
+        "D00",
+        "D11"
+      ]
+    },
+    {
+      "setting": "real_offdiagonal",
+      "file": "gate_body_radians/H2-01-real-offdiagonal.txt",
+      "extracts": [
+        "Re(D01) = (n0 - n1) / 2"
+      ]
+    }
+  ],
+  "optional_four_qubit_encoding": {
+    "qubits": 4,
+    "particles": 2,
+    "pairs": {
+      "alpha": [
+        0,
+        1
+      ],
+      "beta": [
+        2,
+        3
+      ]
+    }
+  }
+}
